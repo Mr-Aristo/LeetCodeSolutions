@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LeetCodeSolutions.Tasks
 {
-    public static class Dublicates //leetcode 26.
+    public static class Dublicates 
     {
-        public static int RemoveDuplicates(int[] nums)
+        public static int RemoveDuplicates(int[] nums)//leetcode 26.
         {
             if (nums.Length == 0)
                 return 0;
@@ -24,5 +24,27 @@ namespace LeetCodeSolutions.Tasks
             }
             return uniqueIndex;
         }
+
+        //Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+        //Input: nums = [1, 2, 3, 1]
+        //Output: true
+        public static bool ContainsDublicate(int[] nums) //217. Contains Dublicate 
+        {            
+            HashSet<int> seenNumbers = new HashSet<int>();
+
+        
+            foreach (int num in nums)
+            {
+            
+                if (!seenNumbers.Add(num))
+                {
+                    return true;
+                }
+            }
+
+         
+            return false;
+        }
+
     }
 }

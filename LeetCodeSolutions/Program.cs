@@ -1,4 +1,6 @@
-﻿namespace LeetCodeSolutions
+﻿using LeetCodeSolutions.Tasks;
+
+namespace LeetCodeSolutions
 {
     public class Program
     {
@@ -40,7 +42,13 @@
             //{
             //    Console.Write(item);
             //}
+            string s = "anagram";
+            string text = "nlaebolko";
 
+
+            //var res = JewelsAndStones.NumJewlesInStones(j, s);
+            var res = MaximumNumberOfBalloons.MaxNumBaloons(text);
+            Console.WriteLine(res);
         }
      
 
