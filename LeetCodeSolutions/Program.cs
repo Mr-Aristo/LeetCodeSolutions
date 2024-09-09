@@ -1,4 +1,5 @@
-﻿using LeetCodeSolutions.Tasks;
+﻿using LeetCodeSolutions.InterviewQuestions;
+using LeetCodeSolutions.Tasks;
 
 namespace LeetCodeSolutions
 {
@@ -42,15 +43,18 @@ namespace LeetCodeSolutions
             //{
             //    Console.Write(item);
             //}
-            string s = "anagram";
-            string text = "nlaebolko";
+
+            string str = "csharpcorner";
+
+            RemoveDublicateChar.RemoveDublicate(str);
 
 
-            //var res = JewelsAndStones.NumJewlesInStones(j, s);
-            var res = MaximumNumberOfBalloons.MaxNumBaloons(text);
-            Console.WriteLine(res);
         }
-     
+
+
+
+
+
 
         #region MultipleReturn
         public static (int count, int[] result) MultipleReturn(int[] nums, int val)
