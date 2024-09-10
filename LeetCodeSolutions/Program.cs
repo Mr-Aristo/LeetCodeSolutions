@@ -44,11 +44,19 @@ namespace LeetCodeSolutions
             //    Console.Write(item);
             //}
 
-            string str = "csharpcorner";
+            //string str = "csharpcorner";
 
-            RemoveDublicateChar.RemoveDublicate(str);
+            //RemoveDublicateChar.RemoveDublicate(str);
 
+            //int[] arr = { 4, 4, 2, 3, 4, 4 };
+            //int[] arr2 = { 2, 7, 11, 15 };
+            //ArrayMerge.Merging(arr, arr2);
 
+            //string time = "12:01:00AM";
+            //Console.Write(TimeConversion.Convert(time));
+
+            List<int> arr = new List<int>{ 1, 3, 5, 6, 4, 6 };
+            MiniMaxSum.minMax(arr);
         }
 
 
