@@ -55,8 +55,9 @@ namespace LeetCodeSolutions
             //string time = "12:01:00AM";
             //Console.Write(TimeConversion.Convert(time));
 
-            List<int> arr = new List<int>{ 1, 3, 5, 6, 4, 6 };
-            MiniMaxSum.minMax(arr);
+            //List<int> arr = new List<int>{ 1, 3, 5, 6, 4, 6 };
+            //MiniMaxSum.minMax(arr)
+
         }
 
 
