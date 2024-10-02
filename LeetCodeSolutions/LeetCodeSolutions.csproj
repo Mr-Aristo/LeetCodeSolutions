@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="GRAPS and SOLID\GRAPS\" />
+    <Folder Include="SortingAlgorithms\Quick\" />
   </ItemGroup>
 
 </Project>
