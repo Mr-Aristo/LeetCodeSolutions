@@ -8,7 +8,7 @@ public class Breadth_First_Search
         HashSet<int> visited = new HashSet<int>();
         // BFS kuyruğu
         Queue<int> queue = new Queue<int>();
-
+        
         // Başlangıç düğümünü kuyruk ve ziyaret listesine ekle
         queue.Enqueue(start);
         visited.Add(start);

@@ -13,14 +13,18 @@ namespace LeetCodeSolutions.SortingAlgorithms.Merge
 
         public static void Sort(List<int> list, int left, int right)
         {
+            Console.WriteLine($"mergeSort called with left={left}, right={right}");
+
             if (left < right)
             {
                 int middle = (left + right) / 2;
 
+                Console.WriteLine($"Dividing: left={left}, middle={middle}, right={right}");
                 Sort(list, left, middle);
 
                 Sort(list, middle + 1, right);
 
+                Console.WriteLine($"Merging: left={left} , middle= {middle} , right= {right}");
                 Merge(list, left, middle, right);
             }
         }
@@ -40,7 +44,7 @@ namespace LeetCodeSolutions.SortingAlgorithms.Merge
                 rightList.Add(list[middle + 1 + j]);
 
             int leftIndex = 0, rightIndex = 0;
-            int mainIndex = left;
+            int mainIndex = left;  
 
             while (leftIndex < leftSize && rightIndex < rightSize)
             {
