@@ -12,11 +12,11 @@ public class BinarySearch
         {
             int middle = (right - left) / 2;
 
-            int comperison = target.CompareTo(collection[middle]);
+            int comperison = target.CompareTo(collection[middle]);// 0
 
             if (comperison == 0)
                 return middle;
-            else if (comperison < 0)
+            else if (comperison < 0) // comperison -1 
                 right = middle - 1; //target is left side
             else
                 left = middle + 1; //taget is right side 
@@ -39,13 +39,11 @@ public class BinarySearch
     Ornek kullanim:
 
      static void Main(string[] args)
-      {
-          
+      {          
           int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15 };
           int target = 7;
       
           int index = BinarySearch(sortedArray, target);
           Console.WriteLine(index); // 3
       }
-
 */

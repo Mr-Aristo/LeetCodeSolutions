@@ -1,4 +1,5 @@
 ﻿using LeetCodeSolutions.InterviewQuestions;
+using LeetCodeSolutions.Search;
 using LeetCodeSolutions.SortingAlgorithms.Merge;
 using LeetCodeSolutions.Tasks;
 
@@ -11,7 +12,14 @@ namespace LeetCodeSolutions
 
            int[] list = { 8, 3, 5, 1, 4, 7, 6, 2 };
 
-           MergeSorting.MergeSort(list, 0, list.Length-1);
+          // MergeSorting.MergeSort(list, 0, list.Length-1);
+          BinarySearch binarySearch = new BinarySearch();
+
+            int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15 };
+            int target = 15;
+
+            int index = binarySearch.Search(sortedArray, target);
+            Console.WriteLine(index); 
 
             //int[] arr = { 4, 4, 2, 3, 4, 4 };
             //int[] arr2 = { 2, 7, 11, 15 };
