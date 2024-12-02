@@ -8,7 +8,60 @@ namespace LeetCodeSolutions.Graphs
 {
     public class Graph
     {
-        
+        Dictionary<int, List<int>> adjacencyList;
+        public Graph()
+        {
+            adjacencyList = new Dictionary<int, List<int>>();
+        }
+
+        /// <summary>
+        /// Add Node to graph
+        /// </summary>
+        /// <param name="node"></param>
+        public void AddNode(int node)
+        {
+            if (!adjacencyList.ContainsKey(node))
+            {
+                adjacencyList[node] = new List<int>();
+
+            }
+
+        }
+
+        /// <summary>
+        /// Add edge to graph
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="destination"></param>
+        public void AddEdge(int source, int destination)
+        {
+            if (!adjacencyList.ContainsKey(source))
+            {
+                AddNode(source);
+            }
+            if (!adjacencyList.ContainsKey(destination))
+            {
+                AddNode(destination);
+            }
+
+            //One way garph (directed graph)
+            adjacencyList[source].Add(destination);
+        }
+
+        public void RemoveNode(int node)
+        {
+            //Chek the key if it is excist in graph
+            if (adjacencyList.ContainsKey(node))
+            {
+                //remove all the connection with node
+                foreach (var keys in adjacencyList.Keys.ToList())
+                {
+                    adjacencyList[keys].Remove(node);
+                }
+                //remove the node
+                adjacencyList.Remove(node);
+            }
+        }
 
         #region ExampleUsage
         /*
@@ -16,10 +69,10 @@ namespace LeetCodeSolutions.Graphs
       Graph graph = new Graph();
 
       // Düğümler ekleniyor
-      graph.AddVertex(1);
-      graph.AddVertex(2);
-      graph.AddVertex(3);
-      graph.AddVertex(4);
+      graph.AddNode(1);
+      graph.AddNode(2);
+      graph.AddNode(3);
+      graph.AddNode(4);
 
       // Kenarlar ekleniyor
       graph.AddEdge(1, 2);
@@ -29,7 +82,7 @@ namespace LeetCodeSolutions.Graphs
       // Grafı yazdırma
       graph.PrintGraph();
 
-       */ 
+       */
         #endregion
 
     }
