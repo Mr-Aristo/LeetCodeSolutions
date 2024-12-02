@@ -1,4 +1,5 @@
 ﻿using LeetCodeSolutions.InterviewQuestions;
+using LeetCodeSolutions.SortingAlgorithms.Merge;
 using LeetCodeSolutions.Tasks;
 
 namespace LeetCodeSolutions
@@ -7,6 +8,10 @@ namespace LeetCodeSolutions
     {
         static void Main(string[] args)
         {
+
+           int[] list = { 8, 3, 5, 1, 4, 7, 6, 2 };
+
+           MergeSorting.MergeSort(list, 0, list.Length-1);
 
             //int[] arr = { 4, 4, 2, 3, 4, 4 };
             //int[] arr2 = { 2, 7, 11, 15 };
