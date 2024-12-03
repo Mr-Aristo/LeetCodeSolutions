@@ -32,6 +32,7 @@ public class BinarySearch
    Generic Yapı: IList<T> kullanılarak hem List<T> hem de T[] desteklenir.
    Karşılaştırma: IComparable<T> kullanılarak elemanlar karşılaştırılır, bu sayede integer, string gibi farklı veri türleriyle kullanılabilir.
    Dizinin Sıralı Olması Gerekir: Binary search çalışabilmesi için giriş dizisinin önceden sıralanmış olması gerekir.
+   Binary search treee ile farklidir.
    Örnek Kullanım
    Dizi: BinarySearch(new int[] { 1, 2, 3 }, 2);
    Liste: BinarySearch(new List<int> { 1, 2, 3 }, 2);
