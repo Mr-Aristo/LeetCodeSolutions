@@ -13,6 +13,7 @@ namespace LeetCodeSolutions.InterviewQuestions
         {
             if (left < right)
             {
+                int a = 0;
                 int middle = (left + right) / 2;
 
                 // Sol yarıyı sırala

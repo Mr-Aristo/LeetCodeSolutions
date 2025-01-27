@@ -17,6 +17,7 @@ namespace LeetCodeSolutions.SortingAlgorithms.Merge
 
             if (left < right)
             {
+                int a = 0; 
                 int middle = (left + right) / 2;
 
                 Console.WriteLine($"Dividing: left={left}, middle={middle}, right={right}");
