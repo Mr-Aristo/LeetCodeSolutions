@@ -5,8 +5,8 @@ namespace LeetCodeSolutions.Sorting.Insertion;
 public static class InsertionSort
 {
     /// <summary>
-    /// First member of the list or array accepts as sorted
-    /// From the send member of list compears with the other members. 
+    /// First member of the arr or array accepts as sorted
+    /// From the send member of arr compears with the other members. 
     /// Time complexity  O(n²)
     /// </summary>
     /// <param name="list"></param>
@@ -48,7 +48,7 @@ public static class InsertionSort
 
     public static void SortFromTheEnd()
     {
-        List<int> arr = [2, 4, 6, 8, 3];
+        List<int> arr = [3, 4, 7, 8, 9, 1, 2];
         int n = arr.Count; //Dizi boyutu
 
         int valueToInsert = arr[n - 1];//sagdaki en uc degeri kaydet
@@ -56,15 +56,38 @@ public static class InsertionSort
 
         while (i >= 0 && arr[i] > valueToInsert)
         {
-            arr[i+1] = arr[i];
+            arr[i + 1] = arr[i];
             PrintArray(arr);
             i--;
         }
-        arr[i+1] = valueToInsert;
+        arr[i + 1] = valueToInsert;
         PrintArray(arr);
     }
     static void PrintArray(List<int> arr)
     {
         Console.WriteLine(string.Join(" ", arr));
+    }
+
+    public static void SortAndPrintSteps()
+    {
+        List<int> arr = [1, 4, 3, 5, 6, 2];
+        int n = arr.Count;
+
+        for (int i = 1; i < n; i++)
+        {
+            int targetValue = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && arr[j] > targetValue)
+            {
+                arr[j + 1] = arr[j];
+                j--;
+
+            }
+            arr[j + 1] = targetValue;
+            Console.WriteLine(string.Join(" ",arr));
+
+        }
+
     }
 }

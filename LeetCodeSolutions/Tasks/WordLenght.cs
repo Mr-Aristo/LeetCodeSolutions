@@ -10,7 +10,7 @@ namespace LeetCodeSolutions.Tasks
     {
         public static int LengthOfLastWord(string s)
         {//example Input: s = "   fly me   to   the moon  "
-            List<String> mylist = s.Trim().Split(" ").ToList();
+            List<string> mylist = s.Trim().Split(" ").ToList();
             int i = mylist.Count() - 1;
             var myword = mylist[i];
             int mycount = myword.Length;

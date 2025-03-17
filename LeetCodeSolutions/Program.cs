@@ -2,6 +2,7 @@
 using LeetCodeSolutions.Search;
 using LeetCodeSolutions.Sorting.Insertion;
 using LeetCodeSolutions.SortingAlgorithms.Merge;
+using LeetCodeSolutions.String;
 using LeetCodeSolutions.Tasks;
 
 namespace LeetCodeSolutions
@@ -12,15 +13,16 @@ namespace LeetCodeSolutions
         {
 
             List<int> list = [ 8, 3, 5, 1, 4, 7, 6, 2 ];
-
-         // MergeSorting.MergeSort(list, 0, list.Length-1);
+            string abbreviationText = "elephant-rides are really fun!";
+            // MergeSorting.MergeSort(list, 0, list.Length-1);
             //BinarySearch binarySearch = new BinarySearch();
-
+            string res = Abbreviation.InterNationalization(abbreviationText);
             //  int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15 };
             //  int target = 15;
             List<int> array = [2,4,6,8,3];
-
-            InsertionSort.SortFromTheEnd();
+            Console.WriteLine(res);
+            //InsertionSort.SortFromTheEnd();
+            //InsertionSort.SortAndPrintSteps();
                                                 
          
             
