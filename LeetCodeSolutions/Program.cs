@@ -1,4 +1,4 @@
-﻿using LeetCodeSolutions.InterviewQuestions;
+using LeetCodeSolutions.InterviewQuestions;
 using LeetCodeSolutions.Search;
 using LeetCodeSolutions.Sorting.Insertion;
 using LeetCodeSolutions.SortingAlgorithms.Merge;
@@ -22,14 +22,9 @@ namespace LeetCodeSolutions
             List<int> array = [2,4,6,8,3];
             Console.WriteLine(res);
             //InsertionSort.SortFromTheEnd();
-            //InsertionSort.SortAndPrintSteps();
-                                                
-         
+            //InsertionSort.SortAndPrintSteps()                   
             
         }
-
-
-
 
 
 
