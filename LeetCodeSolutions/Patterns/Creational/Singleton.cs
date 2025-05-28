@@ -32,7 +32,7 @@ public class Singleton2
     {
         get
         {
-            if(_instance is null)
+            if(_instance is null) // Lazy loading is here 
                 _instance = new Singleton2();
 
             return _instance;
