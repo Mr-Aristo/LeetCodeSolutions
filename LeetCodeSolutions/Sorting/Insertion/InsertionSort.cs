@@ -1,4 +1,4 @@
-﻿
+
 
 namespace LeetCodeSolutions.Sorting.Insertion;
 
