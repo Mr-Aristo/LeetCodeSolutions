@@ -12,18 +12,14 @@ namespace LeetCodeSolutions
         static void Main(string[] args)
         {
 
-            List<int> list = [ 8, 3, 5, 1, 4, 7, 6, 2 ];
-            string abbreviationText = "elephant-rides are really fun!";
-            // MergeSorting.MergeSort(list, 0, list.Length-1);
-            //BinarySearch binarySearch = new BinarySearch();
-            string res = Abbreviation.InterNationalization(abbreviationText);
-            //  int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15 };
-            //  int target = 15;
-            List<int> array = [2,4,6,8,3];
+            List<int> list = [8, 3, 5, 1, 4, 7, 6, 2];
+
+            int[] array = [2, 2, 1, 1, 1, 2, 2];
+
+            var res = MajorityElement.FindMajority(array);
+
             Console.WriteLine(res);
-            //InsertionSort.SortFromTheEnd();
-            //InsertionSort.SortAndPrintSteps()                   
-            
+
         }
 
 
